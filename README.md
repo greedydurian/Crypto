@@ -6,5 +6,9 @@ Create wallet
 3. ```solana-keygen new```
 
 Check balance
+
 ```solana balance```
 
+4. Next, ```sudo apt update``` and run ```curl https://sh.rustup.rs -sSf | sh```. Install the file. It is the first option (Proceed with installation (default))
+
+5. Restart terminal again
