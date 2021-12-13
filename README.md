@@ -15,4 +15,6 @@ Create wallet
 12. Create an account that can hold the token. ```spl-token create-account <token id>```
 13. Mint token with ```spl-token mint <token id> <amount> <account id> 
 14. Check your account ```spl-token accounts```
-15. Transfer it to your own wallet ```spl-token transfer fund-recipient <token ID> <amount> <phantom wallet address> 
+15. Transfer it to your own wallet ```spl-token transfer --fund-recipient --allow-unfunded-recipient <token ID> <amount> <phantom wallet address> . the allow-unfunded-recipient flag means that the wallet does not have an account for our token. Allow it to be sent and we'll create one for them. 
+16. Next, go to ```solscan.io``` and paste the ```token id``` into the search bar. You'll see your token on the blockchain
+17. To stop minting forever, ```spl-token authorize <token id> mint --disable```
